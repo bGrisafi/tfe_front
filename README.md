@@ -8,10 +8,13 @@
 
 ### 2. Changelog
 
-#### 0.1 
- * Commit initial, projet créé et dépendances fonctionelles
- 
+#### 0.1.1
+* Ajout du CRUDservice
+* Correction d'un bug lié au template graphique
+
+#### 0.1.0
+* Commit initial, projet créé et dépendances fonctionelles
  
 ---
  
- &copy; Bruno Grisafi - 2020
+© Bruno Grisafi - 2020
