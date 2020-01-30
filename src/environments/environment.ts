@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api_url: 'localhost/TFE/back/public/api'
+  api_url: 'localhost/TFE/back/public/api/'
 };
 
 /*

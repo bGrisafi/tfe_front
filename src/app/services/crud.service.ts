@@ -10,7 +10,7 @@ import { environment } from '../../environments/environment';
 export abstract class CRUDService {
   url;
   constructor(protected http: HttpClient) {
-    this.url = environment.api_url + this.url;
+    // this.url = environment.api_url + this.url;
   }
 
   public getAll(): Observable<any[]> {

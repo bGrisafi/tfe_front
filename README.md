@@ -8,6 +8,13 @@
 
 ### 2. Changelog
 
+#### 0.1.2
+* Ajouts de components: 
+  * accueil
+  * navigation
+  * slider
+* Gestion dynamique des langues 
+
 #### 0.1.1
 * Ajout du CRUDservice
 * Correction d'un bug lié au template graphique

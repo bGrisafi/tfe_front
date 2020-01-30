@@ -19,7 +19,7 @@ $(document).ready(function () {
     });
 
     // Closes responsive menu when a scroll trigger link is clicked
-    $('.js-scroll-trigger').click(function () {
+   /* $('.js-scroll-trigger').click(function () {
       $('.navbar-collapse').collapse('hide');
     });
 
@@ -27,10 +27,10 @@ $(document).ready(function () {
     $('body').scrollspy({
       target: '#mainNav',
       offset: 56
-    });
+    });*/
 
     // Collapse Navbar
-    var navbarCollapse = function () {
+    /*var navbarCollapse = function () {
       if ($("#mainNav").offset().top > 100) {
         $("#mainNav").addClass("navbar-shrink");
       } else {
@@ -40,7 +40,7 @@ $(document).ready(function () {
     // Collapse now if page is not at top
     navbarCollapse();
     // Collapse the navbar when page is scrolled
-    $(window).scroll(navbarCollapse);
+    $(window).scroll(navbarCollapse);*/
 
   })(jQuery); // End of use strict
 });
