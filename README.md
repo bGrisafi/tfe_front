@@ -8,6 +8,13 @@
 
 ### 2. Changelog
 
+#### 0.2.0
+* Ajout de ngx-translate
+* Ajout de ngBootstrap
+* Gestion dynamique et statique des traductions
+* Ajout des boutons de changement de langues
+* Creation du slider dynamique avec ngBootstrap
+
 #### 0.1.2
 * Ajouts de components: 
   * accueil

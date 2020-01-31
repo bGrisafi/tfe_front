@@ -8,9 +8,10 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export abstract class CRUDService {
-  url;
-  constructor(protected http: HttpClient) {
-    // this.url = environment.api_url + this.url;
+  url: string;
+  constructor(protected http: HttpClient, url) {
+
+    this.url = environment.api_url + url;
   }
 
   public getAll(): Observable<any[]> {

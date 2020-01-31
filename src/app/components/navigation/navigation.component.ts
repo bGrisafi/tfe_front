@@ -1,6 +1,7 @@
-import {Component, Inject, LOCALE_ID, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Page} from '../../models/page';
 import {PagesService} from '../../services/pages.service';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navigation',
@@ -8,14 +9,18 @@ import {PagesService} from '../../services/pages.service';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
-  constructor(private pagesService: PagesService, @Inject(LOCALE_ID) protected localeId: string) {
+  constructor(private pagesService: PagesService, private translate: TranslateService) {
   }
 
   pages: Page[];
-
   ngOnInit(): void {
     this.pagesService.getAll().subscribe(pages => {
       this.pages = pages, console.log(this.pages);
     });
+  }
+  onChangeLang(language: string) {
+    console.log('dans le change');
+    this.translate.setDefaultLang(language);
+    this.translate.use(language);
   }
 }

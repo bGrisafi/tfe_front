@@ -2,9 +2,11 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+
 export const environment = {
   production: false,
-  api_url: 'localhost/TFE/back/public/api/'
+  api_url: 'http://localhost/TFE/back/public/api/'
+  //api_url: 'https://mxo2458.phpnet.org/backTest/public/api/';
 };
 
 /*

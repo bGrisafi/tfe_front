@@ -1,0 +1,25 @@
+.flagFr{
+  background-image: url("../../../assets/img/flag_fr.png");
+  opacity: 0.2;
+}
+.flagUk{
+  background-image: url("../../../assets/img/flag_uk.png");
+  opacity: 0.2;
+}
+.flagFr.active{
+  background-image: url("../../../assets/img/flag_fr.png") !important;
+  opacity: 1;
+}
+
+.flagUk.active{
+  background-image: url("../../../assets/img/flag_uk.png") !important;
+  opacity: 1;
+}
+
+.flags{
+  width: 32px;
+  height: 32px;
+  margin: 10px;
+  text-align: right;
+}
+
