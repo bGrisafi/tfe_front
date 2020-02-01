@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-sm-6 portfolio-item" *ngFor="let article of articles">
+    <a class="portfolio-link"  href="#">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+          <i class="fas fa-plus fa-3x"></i>
+        </div>
+      </div>
+      <img class="img-fluid" src="{{article.illustration}}" alt="">
+    </a>
+    <div class="portfolio-caption">
+      <h4>{{article['titre'+translate.getDefaultLang()]}}</h4>
+      <p class="text-muted">{{article['contenu'+translate.getDefaultLang()] | slice:0:50}} ...</p>
+    </div>
+  </div>
+</div>

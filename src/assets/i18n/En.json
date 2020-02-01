@@ -1,3 +1,9 @@
 {
-  "demo.title": "this is a test"
+  "mainTitle" : "Gallery",
+  "home": {
+    "articles": {
+      "title": "Articles",
+      "content": "The latest news of the galery."
+    }
+  }
 }

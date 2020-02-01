@@ -6,7 +6,6 @@
 export const environment = {
   production: false,
   api_url: 'http://localhost/TFE/back/public/api/'
-  //api_url: 'https://mxo2458.phpnet.org/backTest/public/api/';
 };
 
 /*

@@ -8,6 +8,11 @@
 
 ### 2. Changelog
 
+#### 0.3.0
+* Liste des 4 articles les plus récents en homepage
+* Ajout de textes a la traduction statique
+* Slider animé
+
 #### 0.2.0
 * Ajout de ngx-translate
 * Ajout de ngBootstrap

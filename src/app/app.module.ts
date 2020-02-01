@@ -12,6 +12,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { ArticlesListComponent } from './components/articles/articles-list/articles-list.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -22,7 +23,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     SliderComponent,
     AccueilComponent,
-    NavigationComponent
+    NavigationComponent,
+    ArticlesListComponent
   ],
   imports: [
     BrowserModule,
