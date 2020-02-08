@@ -1,0 +1,11 @@
+<article class="row page-section bg-light" *ngIf="article">
+  <header class="col-lg-12 text-center">
+    <h2 class="section-heading text-uppercase p-5">{{article['titre'+translate.getDefaultLang()]}}</h2>
+    <figure class="col-sm-12">
+      <img class="img-fluid main-image" src="{{article.illustration}}" alt="Illustration">
+    </figure>
+  </header>
+  <main class="col-sm-12">
+    <div class="p-5" [innerHTML]="article['contenu'+translate.getDefaultLang()]"></div>
+  </main>
+</article>

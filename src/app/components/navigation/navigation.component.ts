@@ -9,7 +9,7 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
-  constructor(private pagesService: PagesService, private translate: TranslateService) {
+  constructor(private pagesService: PagesService, public translate: TranslateService) {
   }
 
   pages: Page[];

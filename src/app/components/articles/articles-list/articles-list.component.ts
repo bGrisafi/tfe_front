@@ -13,7 +13,7 @@ export class ArticlesListComponent implements OnInit {
   @Input()
   pagination: string;
   articles: Article[];
-  constructor(private articlesService: ArticlesService, private translate: TranslateService) { }
+  constructor(private articlesService: ArticlesService, public translate: TranslateService) { }
 
   ngOnInit() {
     if (this.pagination === 'true') {
@@ -21,6 +21,9 @@ export class ArticlesListComponent implements OnInit {
         this.articles = articles, console.log(this.articles);
       });
     } else {
+      this.articlesService.getAll().subscribe(articles => {
+        this.articles = articles, console.log(this.articles);
+      });
     }
   }
 

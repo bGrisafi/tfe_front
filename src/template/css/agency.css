@@ -108,7 +108,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: rgba(33,37,41,0.5);
+  background-color: rgba(33,37,41,1);
 }
 
 #mainNav .navbar-toggler {

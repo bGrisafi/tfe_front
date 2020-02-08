@@ -11,7 +11,7 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class SliderComponent implements OnInit {
   sliders: Slider[];
-  constructor(private slidersService: SlidersService, config: NgbCarouselConfig, private translate: TranslateService) {
+  constructor(private slidersService: SlidersService, config: NgbCarouselConfig, public translate: TranslateService) {
     config.interval = 5000;
     config.pauseOnHover = false;
   }

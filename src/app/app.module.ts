@@ -13,9 +13,10 @@ import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { ArticlesListComponent } from './components/articles/articles-list/articles-list.component';
+import { ArticlesItemComponent } from './components/articles/articles-item/articles-item.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
@@ -24,7 +25,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SliderComponent,
     AccueilComponent,
     NavigationComponent,
-    ArticlesListComponent
+    ArticlesListComponent,
+    ArticlesItemComponent
   ],
   imports: [
     BrowserModule,

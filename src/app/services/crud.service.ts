@@ -1,12 +1,7 @@
-import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
-
-@Injectable({
-  providedIn: 'root'
-})
 export abstract class CRUDService {
   url: string;
   constructor(protected http: HttpClient, url) {

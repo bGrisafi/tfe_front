@@ -8,6 +8,11 @@
 
 ### 2. Changelog
 
+#### 0.3.1
+* Détail d'un article
+* Correction d'un bug lié au multilingue en production
+* Création des routes correspondantes
+
 #### 0.3.0
 * Liste des 4 articles les plus récents en homepage
 * Ajout de textes a la traduction statique
