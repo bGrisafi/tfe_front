@@ -17,7 +17,7 @@ export class ArticlesListComponent implements OnInit {
 
   ngOnInit() {
     if (this.pagination === 'true') {
-      this.articlesService.getArticlesPagination().subscribe(articles => {
+      this.articlesService.getPages(1).subscribe(articles => {
         this.articles = articles, console.log(this.articles);
       });
     } else {

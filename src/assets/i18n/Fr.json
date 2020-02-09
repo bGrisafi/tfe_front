@@ -1,9 +1,14 @@
 {
   "mainTitle" : "Galerie",
+  "noDescription": "Aucune description disponible",
   "home": {
     "articles": {
       "title": "Articles",
       "content": "Les dernières actus de la galerie."
+    },
+    "artworks": {
+      "title": "Oeuvres",
+      "content": "Retrouvez ici les dernières oeuvres de nos talentueux artistes"
     }
   }
 }

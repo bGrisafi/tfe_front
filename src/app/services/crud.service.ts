@@ -13,8 +13,17 @@ export abstract class CRUDService {
     return this.http.get<any[]>(this.url);
   }
 
+  //récupère un certain nombre de pages
+  public getPages(pageNumber: number): Observable<any[]> {
+    return this.http.get<any[]>(this.url + '?page=' + pageNumber);
+  }
+
   public getOneById(id: number): Observable<any> {
     return this.http.get<any>(this.url + '/' + id);
+  }
+
+  public getSubRessource(id: number, ressource: string){
+    return this.http.get<any>(this.url + '/' + id +'/' + ressource);
   }
 
   public deleteOneById(id: number): Observable<any> {

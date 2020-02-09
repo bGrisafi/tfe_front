@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" *ngIf="articles">
   <div class="col-sm-6 portfolio-item" *ngFor="let article of articles">
     <a class="portfolio-link"  [routerLink]="['/articles/details/',article.id]">
       <div class="portfolio-hover">
@@ -10,7 +10,7 @@
     </a>
     <div class="portfolio-caption">
       <h4>{{article['titre'+translate.getDefaultLang()]}}</h4>
-      <p class="text-muted">{{article['contenu'+translate.getDefaultLang()] | slice:0:50}} ...</p>
+      <p class="text-muted" [innerHTML]="article['contenu'+translate.getDefaultLang()] | slice:0:50">...</p>
     </div>
   </div>
 </div>

@@ -12,7 +12,6 @@ import {map, switchMap} from 'rxjs/internal/operators';
   styleUrls: ['./articles-item.component.scss']
 })
 export class ArticlesItemComponent implements OnInit {
-  article$: Observable<Article>;
   article: Article;
   id: number;
   constructor(private articlesService: ArticlesService, public translate: TranslateService, private route: ActivatedRoute) {
@@ -20,9 +19,7 @@ export class ArticlesItemComponent implements OnInit {
   }
 
   ngOnInit() {
-
     this.articlesService.getOneById(this.id).subscribe(article => {this.article = article, console.log(this.article); });
-
   }
 
 }

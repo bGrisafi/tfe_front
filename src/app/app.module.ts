@@ -14,6 +14,8 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { ArticlesListComponent } from './components/articles/articles-list/articles-list.component';
 import { ArticlesItemComponent } from './components/articles/articles-item/articles-item.component';
+import { OeuvresListComponent } from './components/oeuvres/oeuvres-list/oeuvres-list.component';
+import { OeuvresItemComponent } from './components/oeuvres/oeuvres-item/oeuvres-item.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -26,7 +28,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AccueilComponent,
     NavigationComponent,
     ArticlesListComponent,
-    ArticlesItemComponent
+    ArticlesItemComponent,
+    OeuvresListComponent,
+    OeuvresItemComponent
   ],
   imports: [
     BrowserModule,

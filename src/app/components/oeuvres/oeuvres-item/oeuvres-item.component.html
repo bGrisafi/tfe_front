@@ -1,0 +1,13 @@
+<article class="row page-section bg-light" *ngIf="oeuvre">
+  <header class="col-lg-12 text-center">
+    <h1 class="text-uppercase">{{oeuvre['nom'+translate.getDefaultLang()]}}</h1>
+    <span *ngIf="artiste" style="padding-right:50%">Par {{artiste.prenom}} {{artiste.nom}}</span>
+    <figure class="col-sm-12">
+      <img class="img-fluid main-image" src="assets/img/oeuvres/{{oeuvre.illustration}}" alt="Illustration">
+    </figure>
+  </header>
+  <main class="col-sm-12 text-center">
+    <div class="p-5" *ngIf="oeuvre['description'+translate.getDefaultLang()]; else descEmpty" [innerHTML]="oeuvre['description'+translate.getDefaultLang()]"></div>
+    <ng-template #descEmpty><div class="p-5">{{'noDescription' | translate}}</div></ng-template>
+  </main>
+</article>

@@ -8,6 +8,11 @@
 
 ### 2. Changelog
 
+#### 0.4.0
+* Creation de la liste des oevres en page d'accueil
+* Creation de la route du détail d'une oeuvre
+* Modification du CRUD service: Ajout de la récuperation d'une ressource one to one
+
 #### 0.3.1
 * Détail d'un article
 * Correction d'un bug lié au multilingue en production

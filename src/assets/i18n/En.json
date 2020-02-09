@@ -1,9 +1,14 @@
 {
   "mainTitle" : "Gallery",
+  "noDescription": "No description aviable",
   "home": {
     "articles": {
       "title": "Articles",
       "content": "The latest news of the galery."
+    },
+    "artworks": {
+      "title": "Artworks",
+      "content": "Here are the latest artworks from the artists."
     }
   }
 }
