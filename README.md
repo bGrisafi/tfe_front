@@ -8,6 +8,14 @@
 
 ### 2. Changelog
 
+#### 0.5.0
+* Création de la page "a propos"
+* Création de la page "contact"
+* Création des routes correspondantes
+* recuperation de la categorie de l'oeuvre
+* Modifications visuelles mineures
+
+
 #### 0.4.0
 * Creation de la liste des oevres en page d'accueil
 * Creation de la route du détail d'une oeuvre

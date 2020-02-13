@@ -16,6 +16,8 @@ import { ArticlesListComponent } from './components/articles/articles-list/artic
 import { ArticlesItemComponent } from './components/articles/articles-item/articles-item.component';
 import { OeuvresListComponent } from './components/oeuvres/oeuvres-list/oeuvres-list.component';
 import { OeuvresItemComponent } from './components/oeuvres/oeuvres-item/oeuvres-item.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -30,7 +32,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ArticlesListComponent,
     ArticlesItemComponent,
     OeuvresListComponent,
-    OeuvresItemComponent
+    OeuvresItemComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

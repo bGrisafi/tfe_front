@@ -4,6 +4,7 @@ import {TranslateService} from "@ngx-translate/core";
 import {ActivatedRoute} from "@angular/router";
 import {Oeuvre} from "../../../models/oeuvre";
 import {Artiste} from "../../../models/artiste";
+import {Categorie} from "../../../models/categorie";
 
 @Component({
   selector: 'app-oeuvres-item',
@@ -13,7 +14,8 @@ import {Artiste} from "../../../models/artiste";
 export class OeuvresItemComponent implements OnInit {
 
   oeuvre: Oeuvre;
-  artiste: Artiste;
+  artiste: any;
+  categorie: any;
   id: number;
   constructor(private oeuvresService: OeuvresService, public translate: TranslateService, private route: ActivatedRoute) {
     this.id = this.route.snapshot.params['id'];
@@ -22,6 +24,7 @@ export class OeuvresItemComponent implements OnInit {
   ngOnInit() {
     this.oeuvresService.getOneById(this.id).subscribe(oeuvre => {this.oeuvre = oeuvre, console.log(this.oeuvre); });
     this.oeuvresService.getSubRessource(this.id,'artiste').subscribe(artiste => {this.artiste = artiste, console.log(this.artiste); })
+    this.oeuvresService.getSubRessource(this.id,'categorie').subscribe(categorie => {this.categorie = categorie, console.log(this.categorie); })
   }
 
 }

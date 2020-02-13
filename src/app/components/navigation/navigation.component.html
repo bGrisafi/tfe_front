@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav text-uppercase ml-auto">
         <li class="nav-item" *ngFor="let page of pages">
-          <a class="nav-link js-scroll-trigger" [routerLink]="page.titreFr | lowercase" [routerLinkActive]="'active'">{{page["titre"+translate.getDefaultLang()]}}</a>
+          <a class="nav-link js-scroll-trigger" [routerLink]="page.titreEn | lowercase" [routerLinkActive]="'active'">{{page["titre"+translate.getDefaultLang()]}}</a>
         </li>
       </ul>
       <div class="flags flagFr" [ngClass]="{'active': translate.getDefaultLang() == 'Fr'}" (click)="onChangeLang('Fr')"></div>

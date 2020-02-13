@@ -10,5 +10,35 @@
       "title": "Oeuvres",
       "content": "Retrouvez ici les dernières oeuvres de nos talentueux artistes"
     }
+  },
+  "contact":{
+    "address": {
+      "title": "Adresse",
+      "country": "Belgique"
+    },
+    "opening": {
+      "title": "Ouverture",
+      "context": "Retrouvez ici nos horaires d'ouverture.",
+      "monday": "Lundi",
+      "tuesday": "Mardi",
+      "wednesday": "Mercredi",
+      "thursday": "Jeudi",
+      "friday": "Vendredi",
+      "saturday": "Samedi",
+      "sunday": "Dimanche",
+      "openingHour": "14h00",
+      "closingHour": "19h00",
+      "appointment": "Uniquement sur rendez-vous",
+      "from": "de",
+      "to": "à"
+    },
+    "form": {
+      "title": "Nous contacter",
+      "name": "Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "validate": "Envoyer"
+    }
   }
 }

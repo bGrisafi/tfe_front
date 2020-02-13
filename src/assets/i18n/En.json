@@ -10,5 +10,35 @@
       "title": "Artworks",
       "content": "Here are the latest artworks from the artists."
     }
+  },
+  "contact":{
+    "address": {
+      "title": "Address",
+      "country": "Belgium"
+    },
+    "opening": {
+      "title": "Opening hours",
+      "context": "Here are our opening hours.",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "openingHour": "2 PM",
+      "closingHour": "7 PM",
+      "appointment": "Appointment only",
+      "from": "from",
+      "to": "to"
+    },
+    "form": {
+      "title": "Contact us",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "validate": "Send"
+    }
   }
 }

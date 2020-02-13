@@ -44,6 +44,12 @@ h6 {
   margin-top: 0;
   margin-bottom: 15px;
 }
+.page-section h2.section-heading-small {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
 
 .page-section h3.section-subheading {
   font-size: 16px;
