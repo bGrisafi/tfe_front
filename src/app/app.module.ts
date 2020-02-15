@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -18,6 +19,7 @@ import { OeuvresListComponent } from './components/oeuvres/oeuvres-list/oeuvres-
 import { OeuvresItemComponent } from './components/oeuvres/oeuvres-item/oeuvres-item.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -34,13 +36,15 @@ export function HttpLoaderFactory(http: HttpClient) {
     OeuvresListComponent,
     OeuvresItemComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
+    NgxPaginationModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

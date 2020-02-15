@@ -8,6 +8,15 @@
 
 ### 2. Changelog
 
+#### 0.6.0
+* Création de la page d'erreur 404
+* Création de la route des articles
+* Création de la route des oeuvres
+* Gestion des erreurs 404 pour le détail d'une oeuvre ou d'un article
+* Modifications mineures du détail d'une oeuvre
+* Ajout de ngx-pagination
+* Gestion de la pagination des oeuvres et articles
+
 #### 0.5.0
 * Création de la page "a propos"
 * Création de la page "contact"

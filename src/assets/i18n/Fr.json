@@ -1,6 +1,15 @@
 {
   "mainTitle" : "Galerie",
   "noDescription": "Aucune description disponible",
+  "404": {
+    "title" : "Oups !",
+    "content": "Il semblerait que cette page n'existe pas.",
+    "homepage": "Retour à l'accueil"
+  },
+  "pagination" : {
+    "previous" : "Précédent",
+    "next": "Suivant"
+  },
   "home": {
     "articles": {
       "title": "Articles",

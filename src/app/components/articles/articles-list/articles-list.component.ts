@@ -11,8 +11,9 @@ import {TranslateService} from "@ngx-translate/core";
 
 export class ArticlesListComponent implements OnInit {
   @Input()
-  pagination: string;
+  pagination: string = 'false';
   articles: Article[];
+  p: number = 1;
   constructor(private articlesService: ArticlesService, public translate: TranslateService) { }
 
   ngOnInit() {

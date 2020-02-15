@@ -10,7 +10,7 @@ export abstract class CRUDService {
   }
 
   public getAll(): Observable<any[]> {
-    return this.http.get<any[]>(this.url);
+    return this.http.get<any[]>(this.url+ "?pagination=false");
   }
 
   //récupère un certain nombre de pages

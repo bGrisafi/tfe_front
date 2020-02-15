@@ -1,6 +1,15 @@
 {
   "mainTitle" : "Gallery",
   "noDescription": "No description aviable",
+  "pagination" : {
+    "previous" : "Previous",
+    "next": "Next"
+  },
+  "404": {
+    "title" : "Oops !",
+    "content": "Seems like this page doesn't exist.",
+    "homepage": "Back to homepage"
+  },
   "home": {
     "articles": {
       "title": "Articles",

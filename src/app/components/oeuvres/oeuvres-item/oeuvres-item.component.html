@@ -5,8 +5,8 @@
       <figure class="col-sm-12">
         <img class="img-fluid main-image" src="assets/img/oeuvres/{{oeuvre.illustration}}" alt="Illustration">
         <figcaption class="row">
-          <div *ngIf="artiste" class="text-left col-sm-4 offset-sm-2">{{artiste.prenom}} {{artiste.nom}}</div>
-          <div *ngIf="categorie" class="text-right col-sm-4">{{categorie['categorie'+translate.getDefaultLang()]}}</div>
+          <a *ngIf="artiste" href="#" class="text-left col-sm-4 offset-sm-2">{{artiste.prenom}} {{artiste.nom}}</a>
+          <a *ngIf="categorie" href="#" class="text-right col-sm-4">{{categorie['categorie'+translate.getDefaultLang()]}}</a>
         </figcaption>
       </figure>
     </header>

@@ -2,6 +2,8 @@ import {Component, Input, OnInit} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 import {OeuvresService} from "../../../services/oeuvres.service";
 import {Oeuvre} from "../../../models/oeuvre";
+import {Router} from "@angular/router";
+
 
 @Component({
   selector: 'app-oeuvres-list',
@@ -10,9 +12,12 @@ import {Oeuvre} from "../../../models/oeuvre";
 })
 export class OeuvresListComponent implements OnInit {
   @Input()
-  pagination: string;
+  pagination: string = 'false';
   oeuvres: Oeuvre[];
-  constructor(private oevresService: OeuvresService, public translate: TranslateService) { }
+  p: number = 1;
+  constructor(private oevresService: OeuvresService, public translate: TranslateService, public router: Router) {
+
+  }
 
   ngOnInit() {
     if (this.pagination === 'true') {
@@ -21,7 +26,7 @@ export class OeuvresListComponent implements OnInit {
       });
     } else {
       this.oevresService.getAll().subscribe(oeuvres => {
-        this.oeuvres = oeuvres, console.log(this.oeuvres);
+        this.oeuvres = oeuvres, console.log(this.oeuvres)
       });
     }
   }

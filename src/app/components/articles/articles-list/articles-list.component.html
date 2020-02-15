@@ -1,16 +1,29 @@
-<div class="row" *ngIf="articles">
-  <div class="col-sm-6 portfolio-item" *ngFor="let article of articles">
-    <a class="portfolio-link"  [routerLink]="['/articles/details/',article.id]">
-      <div class="portfolio-hover">
-        <div class="portfolio-hover-content">
-          <i class="fas fa-plus fa-3x"></i>
+<div class="mainPage-items" *ngIf="articles" [ngClass]="{'bg-light page-section': pagination=='false'}">
+  <div [ngClass]="{'container': pagination=='false'}">
+    <div class="row">
+      <div class="col-sm-6 portfolio-item"
+           *ngFor="let article of articles | paginate: { itemsPerPage: 4, currentPage: p }">
+        <a class="portfolio-link" [routerLink]="['/articles/details/',article.id]">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="{{article.illustration}}" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>{{article['titre'+translate.getDefaultLang()]}}</h4>
+          <p class="text-muted" [innerHTML]="article['contenu'+translate.getDefaultLang()] | slice:0:50">...</p>
         </div>
       </div>
-      <img class="img-fluid" src="{{article.illustration}}" alt="">
-    </a>
-    <div class="portfolio-caption">
-      <h4>{{article['titre'+translate.getDefaultLang()]}}</h4>
-      <p class="text-muted" [innerHTML]="article['contenu'+translate.getDefaultLang()] | slice:0:50">...</p>
+      <div class="text-center w-100">
+        <pagination-controls class="my-pagination" *ngIf="pagination == 'false'" (pageChange)="p = $event"
+                             autoHide="true"
+                             previousLabel="{{'pagination.previous' | translate}}"
+                             nextLabel="{{'pagination.next' | translate}}">
+
+        </pagination-controls>
+      </div>
     </div>
   </div>
 </div>
