@@ -8,6 +8,10 @@
 
 ### 2. Changelog
 
+#### 0.6.1
+* Système d'ordering des articles
+* Titre des pages articles et oeuvres
+
 #### 0.6.0
 * Création de la page d'erreur 404
 * Création de la route des articles

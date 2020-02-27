@@ -49,5 +49,9 @@
       "message": "Message",
       "validate": "Send"
     }
+  },
+  "sort": {
+    "dateDESC": "Newest to oldest",
+    "dateASC": "Oldest to newest"
   }
 }

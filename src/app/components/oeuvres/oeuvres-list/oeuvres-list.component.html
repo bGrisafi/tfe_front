@@ -1,5 +1,10 @@
 <div class="mainPage-items" *ngIf="oeuvres" [ngClass]="{'bg-light page-section': pagination=='false'}">
   <div [ngClass]="{'container': pagination=='false'}">
+    <div class="row mb-5" *ngIf="pagination =='false'">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{'home.artworks.title' | translate}}</h2>
+      </div>
+    </div>
     <div class="row">
       <div class="col-sm-6 portfolio-item"
            *ngFor="let oeuvre of oeuvres | paginate: { itemsPerPage: 4, currentPage: p }">
