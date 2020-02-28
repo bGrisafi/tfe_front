@@ -53,5 +53,14 @@
   "sort": {
     "dateDESC": "Newest to oldest",
     "dateASC": "Oldest to newest"
+  },
+  "comments": {
+    "add" : "Add a comment",
+    "send": "Send",
+    "title": "Comments",
+    "name": "Name",
+    "email": "Email",
+    "comment": "Comment",
+    "by": "By"
   }
 }

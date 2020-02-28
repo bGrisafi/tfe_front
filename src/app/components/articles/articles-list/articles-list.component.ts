@@ -39,15 +39,15 @@ export class ArticlesListComponent implements OnInit {
     switch(order){
       case "dateASC":{
         console.log("dateASC");
-        this.articles.sort((val1, val2)=> {return new Date(val1.dateCreation) - new
-        Date(val2.dateCreation)});
+        this.articles.sort((val1, val2)=> {return new Date(val1.dateCreation).getTime() - new
+        Date(val2.dateCreation).getTime()});
         break;
       }
 
       case "dateDESC":{
         console.log("dateDESC");
-        this.articles.sort((val1, val2)=> {return new Date(val2.dateCreation) - new
-        Date(val1.dateCreation)});
+        this.articles.sort((val1, val2)=> {return new Date(val2.dateCreation).getTime() - new
+        Date(val1.dateCreation).getTime()});
         break;
       }
       case "titleASC":{

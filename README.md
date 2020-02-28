@@ -8,6 +8,10 @@
 
 ### 2. Changelog
 
+#### 0.7.0
+* Ajout de commentaire
+* Liste des commentaires sous les articles
+
 #### 0.6.1
 * Système d'ordering des articles
 * Titre des pages articles et oeuvres

@@ -1,0 +1,13 @@
+.bt-primary.disabled, .btn-primary:disabled {
+  background-color: #fed136;
+  border-color: #fed136;
+  cursor:not-allowed;
+}
+
+.commentsTitle{
+  border-right: 1px solid black;
+}
+.smaller{
+  font-size: 14px;
+  opacity:0.8;
+}
