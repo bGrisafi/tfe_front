@@ -8,6 +8,10 @@
 
 ### 2. Changelog
 
+#### 0.7.1 
+* Liste des oeuvres d'un artites
+* Liste des oeuvres d'une catégorie
+
 #### 0.7.0
 * Ajout de commentaire
 * Liste des commentaires sous les articles

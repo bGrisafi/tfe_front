@@ -17,13 +17,12 @@ export class CommentairesListComponent implements OnInit {
 
   addComment: AddComment;
   commentSended: boolean = false;
-  commentaires : any[];
+  commentaires : any;
   articleRoute: string = "/api/articles/";
 
   constructor(private commentairesService: CommentairesService, private articlesService: ArticlesService) {  }
 
   ngOnInit() {
-    console.log(this.articleId);
     this.articlesService.getSubRessources(this.articleId, 'commentaires').subscribe(commentaires => {
       this.commentaires = commentaires, console.log(this.commentaires);
     });
@@ -44,7 +43,7 @@ export class CommentairesListComponent implements OnInit {
     //send of the comment in DB
     this.commentairesService.addOne(this.addComment).subscribe(
       //If all good -> commentSended true
-      commentaire => {this.commentaires.push(commentaire),
+      commentaire => {commentaire.dateAjout = new Date(), this.commentaires.push(commentaire),
         this.commentSended = true,
         this.sortComments();
       },

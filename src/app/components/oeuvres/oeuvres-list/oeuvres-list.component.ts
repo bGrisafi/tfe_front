@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 import {OeuvresService} from "../../../services/oeuvres.service";
 import {Oeuvre} from "../../../models/oeuvre";
-import {Router} from "@angular/router";
+import {ActivatedRoute} from "@angular/router";
 
 
 @Component({
@@ -15,7 +15,7 @@ export class OeuvresListComponent implements OnInit {
   pagination: string = 'false';
   oeuvres: Oeuvre[];
   p: number = 1;
-  constructor(private oevresService: OeuvresService, public translate: TranslateService, public router: Router) {
+  constructor(private oevresService: OeuvresService, private translate: TranslateService) {
 
   }
 

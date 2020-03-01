@@ -1,0 +1,38 @@
+<div class="mainPage-items bg-light page-section" *ngIf="oeuvres">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase"><span *ngIf="!artiste.prenom == ''">{{artiste.prenom}}</span> {{artiste.nom}}</h2>
+        <h3 class="section-subheading text-muted">{{artiste['bibliographie'+translate.getDefaultLang()]}}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 portfolio-item"
+           *ngFor="let oeuvre of oeuvres | paginate: { itemsPerPage: 4, currentPage: p }">
+        <a class="portfolio-link" [routerLink]="['/artworks/details/',oeuvre.id]">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="assets/img/oeuvres/{{oeuvre.illustration}}" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>{{oeuvre['nom'+translate.getDefaultLang()]}}</h4>
+          <p class="text-muted" *ngIf="oeuvre['description'+translate.getDefaultLang()]; else pEmpty"
+             [innerHTML]="oeuvre['description'+translate.getDefaultLang()] | slice:0:50 "></p>...
+          <ng-template #pEmpty><p class="text-muted">{{'noDescription' | translate}}</p></ng-template>
+        </div>
+      </div>
+      <div class="text-center w-100">
+        <pagination-controls class="my-pagination" (pageChange)="p = $event"
+                             autoHide="true"
+                             previousLabel="{{'pagination.previous' | translate}}"
+                             nextLabel="{{'pagination.next' | translate}}">
+
+        </pagination-controls>
+      </div>
+
+    </div>
+  </div>
+</div>

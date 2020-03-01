@@ -1,5 +1,6 @@
 {
   "mainTitle" : "Gallery",
+  "category": "Category",
   "noDescription": "No description aviable",
   "pagination" : {
     "previous" : "Previous",

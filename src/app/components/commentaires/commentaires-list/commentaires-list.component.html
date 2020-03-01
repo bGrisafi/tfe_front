@@ -8,7 +8,7 @@
       <hr class="col-sm-12"/>
       <div class="col-sm-12" *ngFor="let commentaire of commentaires" >
         <div class="col-sm-12 smaller">
-          <i class="fa fa-clock mr-4"></i><span class="mr-5">{{commentaire.dateAjout | date:'y/M/d'}} {{commentaire.dateAjout | date:'HH:mm'}} </span>
+          <i class="fa fa-clock mr-2"></i><span class="mr-5">{{commentaire.dateAjout | date:'y/M/d'}} {{commentaire.dateAjout | date:'HH:mm'}} </span>
 
         </div>
         <div class="col-sm-12 smaller">
@@ -16,7 +16,7 @@
         </div>
         <div class="col-sm-12 mt-5 mb-5">
           {{commentaire.commentaire}}
-          <hr>
+          <hr class="mt-3">
         </div>
       </div>
     </div>

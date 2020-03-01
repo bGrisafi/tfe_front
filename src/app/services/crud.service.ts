@@ -31,7 +31,7 @@ export abstract class CRUDService {
   public getSubRessource(id: number, ressource: string): Observable<any>{
     return this.http.get<any>(this.url + '/' + id +'/' + ressource + '.json');
   }
-  public getSubRessources(id: number, ressource: string){
+  public getSubRessources(id: number, ressource: string): Observable<any[]> {
     return this.http.get<any[]>(this.url + '/' + id +'/' + ressource  + '.json');
   }
 

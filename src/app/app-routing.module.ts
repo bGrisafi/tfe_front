@@ -8,6 +8,8 @@ import {ContactComponent} from "./components/contact/contact.component";
 import {ArticlesListComponent} from "./components/articles/articles-list/articles-list.component";
 import {OeuvresListComponent} from "./components/oeuvres/oeuvres-list/oeuvres-list.component";
 import {NotFoundComponent} from "./components/not-found/not-found.component";
+import {ArtistesOeuvresComponent} from "./components/artistes/artistes-oeuvres/artistes-oeuvres.component";
+import {CategoriesOeuvresComponent} from "./components/categories/categories-oeuvres/categories-oeuvres.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/homepage', pathMatch: 'full'},
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'articles/details/:id', component: ArticlesItemComponent},
   { path: 'artworks', component: OeuvresListComponent},
   { path: 'artworks/details/:id', component: OeuvresItemComponent},
+  { path: 'artist/artworks/:artistId', component: ArtistesOeuvresComponent},
+  { path: 'category/artworks/:categoryId', component: CategoriesOeuvresComponent},
   { path: 'about', component: AboutComponent},
   { path: 'contact', component: ContactComponent},
   {path: '404', component: NotFoundComponent},

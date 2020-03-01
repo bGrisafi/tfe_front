@@ -1,5 +1,6 @@
 {
   "mainTitle" : "Galerie",
+  "category": "Catégorie",
   "noDescription": "Aucune description disponible",
   "404": {
     "title" : "Oups !",
