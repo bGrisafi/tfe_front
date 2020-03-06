@@ -27,15 +27,15 @@
       <h4 class="col-sm-12">{{'comments.add' | translate}}</h4>
       <hr class="col-sm-12"/>
       <div class="col-sm-12 col-md-6 form-group">
-        <label for="commentName">{{'comments.name' | translate}} * </label>
+        <label for="commentName">{{'comments.name' | translate}} <span class="text-yellow">*</span> </label>
         <input type="text" id="commentName" name="commentName" class="form-control required"ngModel required>
       </div>
       <div class="col-sm-12 col-md-6 form-group">
-        <label for="commentEmail">{{'comments.email' | translate}} * </label>
+        <label for="commentEmail">{{'comments.email' | translate}} <span class="text-yellow">*</span> </label>
         <input type="email" id="commentEmail" name="commentEmail" class="form-control required" ngModel required email>
       </div>
       <div class="col-sm-12 form-group">
-        <label for="commentContent">{{'comments.comment' | translate}} *</label><br/>
+        <label for="commentContent">{{'comments.comment' | translate}} <span class="text-yellow">*</span></label><br/>
         <textarea name="commentContent" id="commentContent" style="width:100%;" rows="6" ngModel required></textarea>
         <button class="btn btn-primary" type="submit" [disabled]="f.invalid">{{'comments.send' | translate}}</button>
       </div>

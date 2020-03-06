@@ -5,7 +5,8 @@
 
 export const environment = {
   production: false,
-  api_url: 'http://localhost/TFE/back/public/api/'
+  api_url: 'http://localhost/TFE/back/public/api/',
+  backoffice_root: 'http://localhost/TFE/back/public/' 
 };
 
 /*

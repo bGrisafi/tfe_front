@@ -1,0 +1,38 @@
+.exposition-img{
+  max-height: 700px;
+  width: auto;
+}
+
+.hover-base{
+  position: relative;
+}
+
+.hoverBloc{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: #fed136;
+}
+
+.hover-base:hover .hoverBloc{
+  opacity: 0.9;
+}
+
+.portfolio-hover-content-exhibition{
+  position: absolute;
+  width: 100%;
+  top:50%;
+}
+.portfolio-hover-content-exhibition i {
+  color: white;
+  position: absolute;
+  text-align: center;
+  text-weight: 900;
+  left:47%;
+}

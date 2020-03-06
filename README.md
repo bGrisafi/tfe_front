@@ -8,6 +8,17 @@
 
 ### 2. Changelog
 
+#### 1.0.1
+* Lien vers le backoffice
+* Ajout d'un bouton Instagram au footer
+
+#### 1.0.0
+* Liste des artistes
+* Liste des expositions
+* Gestion de pagination
+* Affichage accueil de l'expo en cours (si il y en a une)
+* Visuel formulaire de contact
+
 #### 0.7.1 
 * Liste des oeuvres d'un artites
 * Liste des oeuvres d'une catégorie

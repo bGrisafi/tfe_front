@@ -36,24 +36,25 @@
     <div class="container page-section">
       <div class="row">
         <h2 class="section-heading-small col-sm-12">{{'contact.form.title' | translate}}</h2>
-        <form action="#" method="post" class="form-group col-sm-12">
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm" class="form-group col-sm-12">
           <div clas="col-sm-12 ">
-            <label for="name">{{'contact.form.name' | translate}}</label>
-            <input type="text" name="name" id="name" class="form-control required col-sm-6" required/>
+            <label for="name">{{'contact.form.name' | translate}} <span class="text-yellow">*</span></label>
+            <input type="text" name="name" id="name" class="form-control required col-sm-6" ngModel required/>
           </div>
           <div clas="col-sm-12">
-            <label for="email">{{'contact.form.email' | translate}}</label>
-            <input type="email" name="email" id="email" class="form-control required col-sm-6" required/>
+            <label for="email">{{'contact.form.email' | translate}} <span class="text-yellow">*</span></label>
+            <input type="email" name="email" id="email" class="form-control required col-sm-6" ngModel required email/>
           </div>
           <div clas="col-sm-12">
-            <label for="subject">{{'contact.form.subject' | translate}}</label>
-            <input type="text" subject="subject" id="subject" class="form-control col-sm-6"/>
+            <label for="subject">{{'contact.form.subject' | translate}} <span class="text-yellow">*</span></label>
+            <input type="text" name="subject" id="subject" class="form-control col-sm-6" ngModel required/>
           </div>
           <div clas="col-sm-12">
-            <label for="message">{{'contact.form.message' | translate}}</label>
-            <input type="textarea" name="message" id="message" class="form-control col-sm-6"/>
+            <label for="message">{{'contact.form.message' | translate}} <span class="text-yellow">*</span></label>
+            <textarea name="message" id="message" class="form-control col-sm-6" ngModel required></textarea>
           </div>
-            <button class="btn btn-form mt-3" type="submit">{{'contact.form.validate' | translate}}</button>
+            <button class="btn btn-form mt-3" type="submit" [disabled]="f.invalid">{{'contact.form.validate' | translate}}</button>
+          <span class="sended" *ngIf="formSended == true">{{'contact.form.sended' | translate}}</span>
         </form>
       </div>
     </div>

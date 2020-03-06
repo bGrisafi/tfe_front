@@ -19,6 +19,15 @@
     "artworks": {
       "title": "Oeuvres",
       "content": "Retrouvez ici les dernières oeuvres de nos talentueux artistes"
+    },
+    "artists": {
+      "title": "Artistes"
+    },
+    "exhibitions": {
+      "title": "Expositions",
+      "current": {
+        "title": "Exposition en cours"
+      }
     }
   },
   "contact":{
@@ -48,7 +57,8 @@
       "email": "Email",
       "subject": "Sujet",
       "message": "Message",
-      "validate": "Envoyer"
+      "validate": "Envoyer",
+      "sended": "Email envoyé !"
     }
   },
   "sort": {

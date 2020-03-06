@@ -2,7 +2,6 @@ import {Component, Input, OnInit} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 import {OeuvresService} from "../../../services/oeuvres.service";
 import {Oeuvre} from "../../../models/oeuvre";
-import {ActivatedRoute} from "@angular/router";
 
 
 @Component({

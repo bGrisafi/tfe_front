@@ -23,6 +23,9 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { CommentairesListComponent } from './components/commentaires/commentaires-list/commentaires-list.component';
 import { ArtistesOeuvresComponent } from './components/artistes/artistes-oeuvres/artistes-oeuvres.component';
 import { CategoriesOeuvresComponent } from './components/categories/categories-oeuvres/categories-oeuvres.component';
+import { ArtistesListComponent } from './components/artistes/artistes-list/artistes-list.component';
+import { ExpositionsListComponent } from './components/expositions/expositions-list/expositions-list.component';
+import { ExpositionsItemComponent } from './components/expositions/expositions-item/expositions-item.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -43,7 +46,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     NotFoundComponent,
     CommentairesListComponent,
     ArtistesOeuvresComponent,
-    CategoriesOeuvresComponent
+    CategoriesOeuvresComponent,
+    ArtistesListComponent,
+    ExpositionsListComponent,
+    ExpositionsItemComponent
   ],
   imports: [
     BrowserModule,

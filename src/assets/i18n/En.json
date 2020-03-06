@@ -19,6 +19,15 @@
     "artworks": {
       "title": "Artworks",
       "content": "Here are the latest artworks from the artists."
+    },
+    "artists": {
+      "title": "Artists"
+    },
+    "exhibitions": {
+      "title": "Exhibitions",
+      "current": {
+        "title": "Current exhibition"
+      }
     }
   },
   "contact":{
@@ -48,7 +57,8 @@
       "email": "Email",
       "subject": "Subject",
       "message": "Message",
-      "validate": "Send"
+      "validate": "Send",
+      "sended": "Email sended !"
     }
   },
   "sort": {

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Page} from "../../models/page";
 import {PagesService} from "../../services/pages.service";
 import {TranslateService} from "@ngx-translate/core";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-contact',
@@ -9,15 +10,22 @@ import {TranslateService} from "@ngx-translate/core";
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-
-  constructor(private pagesService: PagesService, public translate: TranslateService) { }
-
+  formSended: boolean;
   contact: Page;
   id = 4;
+
+  constructor(private pagesService: PagesService, public translate: TranslateService) { this.formSended = false; }
+
   ngOnInit() {
     this.pagesService.getOneById(this.id).subscribe(page => {
       this.contact = page, console.log(this.contact);
     });
+  }
+
+  onSubmit(form: NgForm){
+    form.reset();
+    this.formSended = true;
+
   }
 
 }
