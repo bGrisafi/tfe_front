@@ -14,7 +14,7 @@ export class OeuvresListComponent implements OnInit {
   pagination: string = 'false';
   oeuvres: Oeuvre[];
   p: number = 1;
-  constructor(private oevresService: OeuvresService, private translate: TranslateService) {
+  constructor(private oevresService: OeuvresService, public translate: TranslateService) {
 
   }
 

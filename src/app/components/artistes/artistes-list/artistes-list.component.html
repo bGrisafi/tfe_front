@@ -17,7 +17,7 @@
           <img class="img-fluid" src="assets/img/artistes/{{artiste.photo}}" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4><span *ngIf="!artiste.prenom == ''">{{artiste.prenom}} </span>{{artiste.nom}}</h4>
+          <h4><span>{{artiste.prenom}} </span>{{artiste.nom}}</h4>
           <p class="text-muted" *ngIf="artiste['bibliographie'+translate.getDefaultLang()]; else pEmpty"
              [innerHTML]="artiste['bibliographie'+translate.getDefaultLang()] | slice:0:50 "></p>...
           <ng-template #pEmpty><p class="text-muted">{{'noDescription' | translate}}</p></ng-template>

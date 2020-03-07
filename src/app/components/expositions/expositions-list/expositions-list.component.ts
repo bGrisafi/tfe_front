@@ -11,7 +11,7 @@ import {TranslateService} from "@ngx-translate/core";
 export class ExpositionsListComponent implements OnInit {
   expositions: Exposition[];
   p: number = 1;
-  constructor(private expositionsService: ExpositionsService, private translate: TranslateService) { }
+  constructor(private expositionsService: ExpositionsService, public translate: TranslateService) { }
 
   ngOnInit() {
     this.expositionsService.getAll().subscribe(expositions => {

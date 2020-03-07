@@ -13,7 +13,7 @@ export class ExpositionsItemComponent implements OnInit {
 
   id: number;
   exposition: Exposition;
-  constructor(private expositionsService: ExpositionsService, private translate: TranslateService, private route: ActivatedRoute) {
+  constructor(private expositionsService: ExpositionsService, public translate: TranslateService, private route: ActivatedRoute) {
     this.id = this.route.snapshot.params['id'];
   }
 

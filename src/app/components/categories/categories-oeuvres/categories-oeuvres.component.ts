@@ -13,6 +13,7 @@ export class CategoriesOeuvresComponent implements OnInit {
   id: number;
   categorie: Categorie;
   oeuvres: any[];
+  p: number = 1;
   constructor(private route: ActivatedRoute, private categoriesService: CategoriesService, public translate: TranslateService) {
     this.id = this.route.snapshot.params['categoryId'];
   }

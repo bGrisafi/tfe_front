@@ -13,7 +13,7 @@ export class ArtistesListComponent implements OnInit {
   artistes: Artiste[];
   p: number = 1;
 
-  constructor(private artistesService: ArtistesService, private translate: TranslateService) { }
+  constructor(private artistesService: ArtistesService, public translate: TranslateService) { }
 
   ngOnInit() {
     this.artistesService.getAll().subscribe(artistes => {
