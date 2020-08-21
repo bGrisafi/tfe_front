@@ -3,7 +3,9 @@ import {ExpositionsService} from "../../../services/expositions.service";
 import {TranslateService} from "@ngx-translate/core";
 import {ActivatedRoute} from "@angular/router";
 import {Exposition} from "../../../models/exposition";
+import {UntilDestroy} from "@ngneat/until-destroy";
 
+@UntilDestroy({ checkProperties: true })
 @Component({
   selector: 'app-expositions-item',
   templateUrl: './expositions-item.component.html',

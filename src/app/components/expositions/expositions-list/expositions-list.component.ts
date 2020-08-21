@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {Exposition} from "../../../models/exposition";
 import {ExpositionsService} from "../../../services/expositions.service";
 import {TranslateService} from "@ngx-translate/core";
+import {UntilDestroy} from "@ngneat/until-destroy";
 
+@UntilDestroy({ checkProperties: true })
 @Component({
   selector: 'app-expositions-list',
   templateUrl: './expositions-list.component.html',

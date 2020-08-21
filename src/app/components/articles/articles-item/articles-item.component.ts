@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ArticlesService} from '../../../services/articles.service';
 import {TranslateService} from '@ngx-translate/core';
 import {Article} from '../../../models/article';
 import {ActivatedRoute, Router} from '@angular/router';
-import {Observable} from 'rxjs/index';
-import {map, switchMap} from 'rxjs/internal/operators';
+import {UntilDestroy} from "@ngneat/until-destroy";
 
+@UntilDestroy({ checkProperties: true })
 @Component({
   selector: 'app-articles-item',
   templateUrl: './articles-item.component.html',

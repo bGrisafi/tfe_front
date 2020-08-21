@@ -3,7 +3,9 @@ import {Page} from "../../models/page";
 import {PagesService} from "../../services/pages.service";
 import {TranslateService} from "@ngx-translate/core";
 import {NgForm} from "@angular/forms";
+import {UntilDestroy} from "@ngneat/until-destroy";
 
+@UntilDestroy({ checkProperties: true })
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',

@@ -8,6 +8,10 @@
 
 ### 2. Changelog
 
+####1.1.0
+* Ajout de UntilDestroy pour la gestion des subscription
+* ajout d'un delai sur la souscription à la liste des oeuvres
+
 #### 1.0.1
 * Lien vers le backoffice
 * Ajout d'un bouton Instagram au footer

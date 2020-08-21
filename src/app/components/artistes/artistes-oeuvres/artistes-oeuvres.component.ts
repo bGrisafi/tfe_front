@@ -3,7 +3,9 @@ import {ActivatedRoute} from "@angular/router";
 import {Artiste} from "../../../models/artiste";
 import {ArtistesService} from "../../../services/artistes.service";
 import {TranslateService} from "@ngx-translate/core";
+import {UntilDestroy} from "@ngneat/until-destroy";
 
+@UntilDestroy({ checkProperties: true })
 @Component({
   selector: 'app-artistes-oeuvres',
   templateUrl: './artistes-oeuvres.component.html',

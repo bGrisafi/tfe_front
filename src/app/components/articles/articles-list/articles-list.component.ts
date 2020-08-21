@@ -2,7 +2,9 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Article} from '../../../models/article';
 import {ArticlesService} from '../../../services/articles.service';
 import {TranslateService} from "@ngx-translate/core";
+import {UntilDestroy} from "@ngneat/until-destroy";
 
+@UntilDestroy({ checkProperties: true })
 @Component({
   selector: 'app-articles-list',
   templateUrl: './articles-list.component.html',

@@ -2,7 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {Page} from '../../models/page';
 import {PagesService} from '../../services/pages.service';
 import {TranslateService} from '@ngx-translate/core';
+import {UntilDestroy} from "@ngneat/until-destroy";
 
+@UntilDestroy({ checkProperties: true })
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
