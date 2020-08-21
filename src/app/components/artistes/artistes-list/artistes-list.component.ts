@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {ArtistesService} from "../../../services/artistes.service";
 import {TranslateService} from "@ngx-translate/core";
 import {Artiste} from "../../../models/artiste";
+import {UntilDestroy} from "@ngneat/until-destroy";
 
+@UntilDestroy({ checkProperties: true })
 @Component({
   selector: 'app-artistes-list',
   templateUrl: './artistes-list.component.html',

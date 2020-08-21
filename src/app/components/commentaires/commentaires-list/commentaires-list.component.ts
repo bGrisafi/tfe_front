@@ -2,10 +2,10 @@ import {Component, Input, OnInit} from '@angular/core';
 import {NgForm} from '@angular/forms';
 import {AddComment} from "../../../models/add-comment";
 import {CommentairesService} from "../../../services/commentaires.service";
-import {formatDate} from "@angular/common";
-import {Commentaire} from "../../../models/commentaire";
 import {ArticlesService} from "../../../services/articles.service";
+import {UntilDestroy} from "@ngneat/until-destroy";
 
+@UntilDestroy({ checkProperties: true })
 @Component({
   selector: 'app-commentaires-list',
   templateUrl: './commentaires-list.component.html',

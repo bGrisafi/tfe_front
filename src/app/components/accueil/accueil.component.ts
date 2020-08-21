@@ -2,7 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {ExpositionsService} from "../../services/expositions.service";
 import {Exposition} from "../../models/exposition";
 import {TranslateService} from "@ngx-translate/core";
+import {UntilDestroy} from "@ngneat/until-destroy";
 
+@UntilDestroy({ checkProperties: true })
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.component.html',
@@ -22,7 +24,7 @@ export class AccueilComponent implements OnInit {
   }
 
   checkExpositions(currentDate): void {
-    for(var i = 0; i < this.expositions.length; i++){
+    for(let i = 0; i < this.expositions.length; i++){
       if(currentDate >= new Date(this.expositions[i].dateDebut) && currentDate <= new Date(this.expositions[i].dateFin)){
         this.expoEnCours = true;
         this.exposition = this.expositions[i];

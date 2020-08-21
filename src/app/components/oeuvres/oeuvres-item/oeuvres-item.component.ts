@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {OeuvresService} from "../../../services/oeuvres.service";
 import {TranslateService} from "@ngx-translate/core";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Oeuvre} from "../../../models/oeuvre";
-import {Artiste} from "../../../models/artiste";
-import {Categorie} from "../../../models/categorie";
+import {UntilDestroy} from "@ngneat/until-destroy";
 
+@UntilDestroy({ checkProperties: true })
 @Component({
   selector: 'app-oeuvres-item',
   templateUrl: './oeuvres-item.component.html',

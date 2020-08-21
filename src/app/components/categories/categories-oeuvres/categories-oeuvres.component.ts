@@ -3,7 +3,9 @@ import {ActivatedRoute} from "@angular/router";
 import {TranslateService} from "@ngx-translate/core";
 import {CategoriesService} from "../../../services/categories.service";
 import {Categorie} from "../../../models/categorie";
+import {UntilDestroy} from "@ngneat/until-destroy";
 
+@UntilDestroy({ checkProperties: true })
 @Component({
   selector: 'app-categories-oeuvres',
   templateUrl: './categories-oeuvres.component.html',
