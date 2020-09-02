@@ -24,13 +24,13 @@ export class OeuvresListComponent implements OnInit {
       setTimeout(() => {
         this.oevresService.getPages(1)
           .subscribe(oeuvres => {
-          this.oeuvres = oeuvres, console.log(this.oeuvres);
+          this.oeuvres = oeuvres/*, console.log(this.oeuvres)*/;
         });
-       },1000);
+     },1000);
 
     } else {
       this.oevresService.getAll().subscribe(oeuvres => {
-        this.oeuvres = oeuvres, console.log(this.oeuvres)
+        this.oeuvres = oeuvres/*, console.log(this.oeuvres)*/;
       });
     }
   }

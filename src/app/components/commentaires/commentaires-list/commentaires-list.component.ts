@@ -24,7 +24,7 @@ export class CommentairesListComponent implements OnInit {
 
   ngOnInit() {
     this.articlesService.getSubRessources(this.articleId, 'commentaires').subscribe(commentaires => {
-      this.commentaires = commentaires, console.log(this.commentaires);
+      this.commentaires = commentaires/*, console.log(this.commentaires)*/;
     });
 
   }

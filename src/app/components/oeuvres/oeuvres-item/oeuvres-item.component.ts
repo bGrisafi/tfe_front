@@ -23,12 +23,12 @@ export class OeuvresItemComponent implements OnInit {
 
   ngOnInit() {
     this.oeuvresService.getOneById(this.id).subscribe(
-      oeuvre => {this.oeuvre = oeuvre, console.log(this.oeuvre);},
+      oeuvre => {this.oeuvre = oeuvre/*, console.log(this.oeuvre)*/;},
       error => {this.router.navigate(['/404']);
       });
 
-    this.oeuvresService.getSubRessource(this.id,'artiste').subscribe(artiste => {this.artiste = artiste, console.log(this.artiste); })
-    this.oeuvresService.getSubRessource(this.id,'categorie').subscribe(categorie => {this.categorie = categorie, console.log(this.categorie); })
+    this.oeuvresService.getSubRessource(this.id,'artiste').subscribe(artiste => {this.artiste = artiste/*, console.log(this.artiste)*/; })
+    this.oeuvresService.getSubRessource(this.id,'categorie').subscribe(categorie => {this.categorie = categorie/*, console.log(this.categorie);*/ })
   }
 
 }

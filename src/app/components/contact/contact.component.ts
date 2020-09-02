@@ -20,7 +20,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.pagesService.getOneById(this.id).subscribe(page => {
-      this.contact = page, console.log(this.contact);
+      this.contact = page/*, console.log(this.contact)*/;
     });
   }
 

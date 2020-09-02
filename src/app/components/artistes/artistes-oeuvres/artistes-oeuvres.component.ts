@@ -22,7 +22,7 @@ export class ArtistesOeuvresComponent implements OnInit {
 
   ngOnInit() {
     this.artistesService.getOneById(this.id).subscribe(artiste => this.artiste = artiste);
-    this.artistesService.getSubRessources(this.id, 'oeuvres').subscribe(oeuvres => {this.oeuvres = oeuvres, console.log(this.oeuvres);});
+    this.artistesService.getSubRessources(this.id, 'oeuvres').subscribe(oeuvres => {this.oeuvres = oeuvres/*, console.log(this.oeuvres)*/;});
   }
 
 }

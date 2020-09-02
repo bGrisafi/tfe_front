@@ -19,7 +19,7 @@ export class ArtistesListComponent implements OnInit {
 
   ngOnInit() {
     this.artistesService.getAll().subscribe(artistes => {
-      this.artistes = artistes, console.log(this.artistes)
+      this.artistes = artistes/*, console.log(this.artistes)*/;
     });
   }
 

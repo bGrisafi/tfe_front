@@ -21,7 +21,7 @@ export class ExpositionsItemComponent implements OnInit {
 
   ngOnInit() {
     this.expositionsService.getOneById(this.id).subscribe(
-      exposition => {this.exposition = exposition, console.log(this.exposition);
+      exposition => {this.exposition = exposition/*, console.log(this.exposition)*/;
     });
   }
 

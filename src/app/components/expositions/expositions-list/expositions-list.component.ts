@@ -17,7 +17,7 @@ export class ExpositionsListComponent implements OnInit {
 
   ngOnInit() {
     this.expositionsService.getAll().subscribe(expositions => {
-      this.expositions = expositions, console.log(this.expositions)
+      this.expositions = expositions/*, console.log(this.expositions)*/
     });
   }
 

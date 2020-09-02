@@ -19,7 +19,7 @@ export class ArticlesItemComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.articlesService.getOneById(this.id).subscribe(article => {this.article = article, console.log(this.article);},
+    this.articlesService.getOneById(this.id).subscribe(article => {this.article = article/*, console.log(this.article)*/;},
     error => { this.router.navigate(['/404']);
     });
   }

@@ -20,7 +20,7 @@ export class SliderComponent implements OnInit {
 
   ngOnInit() {
     this.slidersService.getAll().subscribe(sliders => {
-      this.sliders = sliders, console.log(this.sliders);
+      this.sliders = sliders/*, console.log(this.sliders)*/;
     });
   }
 

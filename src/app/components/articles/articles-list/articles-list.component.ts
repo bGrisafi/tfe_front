@@ -22,11 +22,11 @@ export class ArticlesListComponent implements OnInit {
   ngOnInit() {
     if (this.pagination === 'true') {
       this.articlesService.getPages(1).subscribe(articles => {
-        this.articles = articles, console.log(this.articles);
+        this.articles = articles/*, console.log(this.articles)*/;
       });
     } else {
       this.articlesService.getAll().subscribe(articles => {
-        this.articles = articles, console.log(this.articles);
+        this.articles = articles/*, console.log(this.articles)*/;
       });
     }
   }
@@ -40,14 +40,14 @@ export class ArticlesListComponent implements OnInit {
   sortArray(order: string){
     switch(order){
       case "dateASC":{
-        console.log("dateASC");
+        /*console.log("dateASC");*/
         this.articles.sort((val1, val2)=> {return new Date(val1.dateCreation).getTime() - new
         Date(val2.dateCreation).getTime()});
         break;
       }
 
       case "dateDESC":{
-        console.log("dateDESC");
+        //console.log("dateDESC");
         this.articles.sort((val1, val2)=> {return new Date(val2.dateCreation).getTime() - new
         Date(val1.dateCreation).getTime()});
         break;

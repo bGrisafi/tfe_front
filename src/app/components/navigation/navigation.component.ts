@@ -17,7 +17,7 @@ export class NavigationComponent implements OnInit {
   pages: Page[];
   ngOnInit(): void {
     this.pagesService.getAll().subscribe(pages => {
-      this.pages = pages, console.log(this.pages);
+      this.pages = pages/*, console.log(this.pages)*/;
     });
   }
   onChangeLang(language: string) {
